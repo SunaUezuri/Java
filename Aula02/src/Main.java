@@ -27,5 +27,21 @@ public class Main {
         //Chamar os métodos
         cao.andar();
         dogBelga.andar();
+
+        //Chamar o método da dose de 1 remédio a cada 7Kg
+        float doseBelga = cao.calcularDose(7);
+        System.out.println("Doses necessárias: " + doseBelga);
+
+        float doseCao = cao.calcularDose(5);
+        System.out.println("Doses necessárias: " + doseCao);
+
+        //Calcular idade e exibir a humana
+
+        int idadeCao = cao.idadeHumana();
+        System.out.println("A idade é: " + idadeCao);
+
+        int idadeBelga = dogBelga.idadeHumana();
+        System.out.println("A idade é: " + idadeBelga);
+
     }
 }
