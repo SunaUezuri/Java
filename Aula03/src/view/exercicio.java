@@ -21,7 +21,7 @@ public class exercicio {
         unocomEscada.setMotor(1);
 
         System.out.println("Seu carro é do modelo: " + unocomEscada.getModelo() + ". Ele tem "
-                + unocomEscada.getQuantidadedePortas() + " e " + unocomEscada.getQuantidadedeLugares() + ". Mede: "
+                + unocomEscada.getQuantidadedePortas() + " portas " + "e " + unocomEscada.getQuantidadedeLugares() + " lugares" + ". Mede: "
         + unocomEscada.getComprimento() + ", foi fabricado em " + unocomEscada.getAnoFabricacao()
                 + " é da cor " + unocomEscada.getCor().getNome() + ". Tem a placa: " + unocomEscada.getPlaca() +
                 " e motor é do modelo " + unocomEscada.getMotor());
