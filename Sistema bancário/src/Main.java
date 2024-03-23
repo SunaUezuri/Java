@@ -4,16 +4,9 @@ public class Main {
 
         Conta novaConta = new Conta();
 
-              novaConta.numero = "001";
-              novaConta.depositar(40);
-              novaConta.sacar(20);
-
-
-
+        novaConta.numero = "001";
+        novaConta.depositar(40);
+        novaConta.sacar(20);
 
     }
-
-
-
-
 }

@@ -12,7 +12,7 @@ public class Conta {
             saldo-= valor;
 
        else if(saldo<valor)
-          System.out.println("Você é liso");
+            System.out.println("Pobre");
        
         else
             saldo-= valor;
