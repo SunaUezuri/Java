@@ -14,6 +14,6 @@ public class Main {
         float media = (nota1 + nota2) / 2;
 
         //Exibir a nota
-        System.out.println(media);
+        JOptionPane.showMessageDialog(null, "Média " + media);
     }
 }
