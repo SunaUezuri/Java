@@ -1,4 +1,4 @@
-public class Conversões {
+public class Conversoes {
     public static void main(String[] args) {
         //byte, short, int, long
         //float, double
@@ -8,7 +8,7 @@ public class Conversões {
 
         int numero = 1;
         byte numeroByte = (byte) numero; //int maior que byte
-                          //Forçando o cast desta maneira pode haver perda de precisão
+        //Forçando o cast desta maneira pode haver perda de precisão
 
         float nota = 10;
         double notaDouble = nota;
