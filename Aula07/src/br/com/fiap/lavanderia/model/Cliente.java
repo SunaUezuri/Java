@@ -7,6 +7,11 @@ public class Cliente  extends Pessoa{
     private boolean assinante;
 
 
+    public Cliente(int id, String nome, String cpf, Endereco endereco, boolean assinante){
+        super(id, nome, cpf, endereco); //chamar o construtor pai
+        this.assinante = assinante;
+    }
+
     public void pagar(double valor){
         //Se for assinante tem 10% de desconto
         if (assinante) valor *= 0.9;

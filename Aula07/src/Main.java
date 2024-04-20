@@ -9,21 +9,17 @@ public class Main {
     public static void main(String[] args) {
         //Instanciar um funcionário
 
-        Funcionario f = new Funcionario();
-        Cliente a = new Cliente();
+        Funcionario f = new Funcionario(12, "Renan", "555555555", null, "Estagiário",
+                1.400);
 
         //Setar o nome e cargo do funcionário
 
         f.setNome("Clodoaldo");
         f.setCargo("Assistente técnico");
 
-        System.out.println("Bem vindo funcionário " + f.getNome() + " , seu cargo é: "
-        + f.getCargo());
 
-        a.setNome("Nicole");
-        a.pagar(300);
-        a.setAssinante(true);
-        a.pagar(300);
+
+
 
     }
 }

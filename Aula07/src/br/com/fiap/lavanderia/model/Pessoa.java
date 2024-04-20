@@ -5,6 +5,25 @@ public class Pessoa {
     private int id;
     protected String nome;
     private String cpf;
+    private Endereco endereco;
+
+    //criar um construtor, com id, nome, cpf e endereço
+
+    public Pessoa(int id, String nome, String cpf, Endereco endereco) {
+        this.id = id;
+        this.nome = nome;
+        this.cpf = cpf;
+        this.endereco = endereco;
+    }
+
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
 
     public int getId() {
         return id;
