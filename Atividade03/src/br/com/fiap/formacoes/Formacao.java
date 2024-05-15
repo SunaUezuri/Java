@@ -1,11 +1,12 @@
 package br.com.fiap.formacoes;
 
-public class Formacao {
+//Classe abstrata -> não pode ser instanciada
+public abstract class Formacao {
 
-    private String descricao;
+    protected String descricao;
     private int periodo;
     private double mensalidade;
-    private int duracao;
+    protected int duracao;
 
     @Override
     public String toString() {
@@ -50,13 +51,9 @@ public class Formacao {
         return duracao;
     }
 
-    public void setDuracao(int duracao) {
-        this.duracao = duracao;
-    }
 
-    public void definirDuracao(){
-
-    }
+    //Método abstrato, sem imlementação
+    public abstract void definirDuracao();
 
     public double calcularMedia(double checkpoint1, double checkpoint2, double checkpoint3){
         double media = 0;
@@ -80,6 +77,5 @@ public class Formacao {
         double semestre2 = global2 * 0.6 + checkpoint2 * 0.2 + challenge2 * 0.2;
         return semestre1 * 0.4 + semestre2 * 0.6;
     }
-
 
 }

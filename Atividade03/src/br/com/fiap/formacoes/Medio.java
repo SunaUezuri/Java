@@ -26,4 +26,8 @@ public class Medio extends Formacao{
         return getDuracao() * fator * 500;
     }
 
+    @Override
+    public void definirDuracao() {
+        duracao = 36;
+    }
 }

@@ -38,5 +38,12 @@ public class Bacharelado extends Formacao{
         return (getDuracao() * fator * 600) + (cargaHorariaEstagio * 12);
     }
 
-
+    @Override
+    public void definirDuracao() {
+        if (descricao.toUpperCase().contains("ENGENHARIA")){
+            duracao = 60;
+        }else {
+            duracao = 48;
+        }
+    }
 }
