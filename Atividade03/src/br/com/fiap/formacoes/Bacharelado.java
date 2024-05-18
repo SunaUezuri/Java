@@ -11,9 +11,9 @@ public class Bacharelado extends Formacao{
                 "\nCarga horária para o estágio";
     }
 
-    public Bacharelado(String descricao, int periodo, double mensalidade, int duracao,
+    public Bacharelado(String descricao, TipoPeriodo periodo,
                        String projetoConclusao, int cargaHorariaEstagio) {
-        super(descricao, periodo, mensalidade, duracao);
+        super(descricao, periodo);
         this.projetoConclusao = projetoConclusao;
         this.cargaHorariaEstagio = cargaHorariaEstagio;
     }
@@ -34,10 +34,6 @@ public class Bacharelado extends Formacao{
         this.cargaHorariaEstagio = cargaHorariaEstagio;
     }
 
-    public double calcularMensalidade(double fator){
-        return (getDuracao() * fator * 600) + (cargaHorariaEstagio * 12);
-    }
-
     @Override
     public void definirDuracao() {
         if (descricao.toUpperCase().contains("ENGENHARIA")){
@@ -46,4 +42,10 @@ public class Bacharelado extends Formacao{
             duracao = 48;
         }
     }
+
+    public double calcularMensalidade(double fator){
+        return mensalidade = (duracao * fator * 600) + (cargaHorariaEstagio * 12);
+    }
+
+
 }

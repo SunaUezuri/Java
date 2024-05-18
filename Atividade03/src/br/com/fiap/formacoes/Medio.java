@@ -9,8 +9,8 @@ public class Medio extends Formacao{
         return super.toString() + "\nTipo: " + tipo;
     }
 
-    public Medio(String descricao, int periodo, double mensalidade, int duracao, String tipo) {
-        super(descricao, periodo, mensalidade, duracao);
+    public Medio(String descricao, TipoPeriodo periodo, String tipo) {
+        super(descricao, periodo);
         this.tipo = tipo;
     }
 
@@ -22,12 +22,12 @@ public class Medio extends Formacao{
         this.tipo = tipo;
     }
 
-    public double calcularMensalidade(double fator) {
-        return getDuracao() * fator * 500;
-    }
-
     @Override
     public void definirDuracao() {
         duracao = 36;
+    }
+
+    public double calcularMensalidade(double fator) {
+        return mensalidade = duracao * fator * 500;
     }
 }

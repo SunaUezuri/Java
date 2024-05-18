@@ -4,8 +4,8 @@ package br.com.fiap.formacoes;
 public abstract class Formacao {
 
     protected String descricao;
-    private int periodo;
-    private double mensalidade;
+    private TipoPeriodo periodo;
+    protected double mensalidade;
     protected int duracao;
 
     @Override
@@ -16,7 +16,7 @@ public abstract class Formacao {
                 "\nDuração: " + duracao;
     }
 
-    public Formacao(String descricao, int periodo, double mensalidade, int duracao) {
+    public Formacao(String descricao, TipoPeriodo periodo) {
         this.descricao = descricao;
         this.periodo = periodo;
         this.mensalidade = mensalidade;
@@ -31,24 +31,13 @@ public abstract class Formacao {
         this.descricao = descricao;
     }
 
-    public int getPeriodo() {
+
+    public TipoPeriodo getPeriodo() {
         return periodo;
     }
 
-    public void setPeriodo(int periodo) {
+    public void setPeriodo(TipoPeriodo periodo) {
         this.periodo = periodo;
-    }
-
-    public double getMensalidade() {
-        return mensalidade;
-    }
-
-    public void setMensalidade(double mensalidade) {
-        this.mensalidade = mensalidade;
-    }
-
-    public int getDuracao() {
-        return duracao;
     }
 
 
